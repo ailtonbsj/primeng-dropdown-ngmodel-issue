@@ -1,0 +1,8 @@
+<div class="card flex justify-content-center align-items-center gap-3">
+
+  <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"></p-dropdown>
+  
+  <p-button (click)="setDropdown()">Set to London</p-button>
+  <span id="current">Current value: {{ selectedCity.name }}</span>
+  <p-button severity="danger" (click)="resetDropdown()">Reset</p-button>
+</div>
